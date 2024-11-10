@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog posts</title>
-    <script src="script.js"></script>
+    <title>Blog Posts</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,23 +13,22 @@
             <h1>Blog Posts</h1>
             <div>
                 <label for="userDropdown">Filter by User:</label>
-                <select  id="userDropdown">
+                <select id="userDropdown">
                     <option value="">All Users</option>
                 </select>
             </div>
-            <input type="text"  id="searchInput" placeholder="Search post...">
-            <select  id="sortDropdown">
-                <option value="asc">Sort by Title : Ascending</option>
-                <option value="desc">Sort by Title : Descending</option>
+            <input type="text" id="searchInput" placeholder="Search posts...">
+            <select id="sortDropdown">
+                <option value="asc">Sort by Title: Ascending</option>
+                <option value="desc">Sort by Title: Descending</option>
             </select>
         </header>
-        <div id="PostsContainer"></div>
+        <div id="postsContainer"></div>
         <div class="pagination">
-             <button id="PrevPage">Previous</button>
-             <span id="pageInfo"></span>
-             <button id="nextpage">Next</button>
-            </div>
+            <button id="prevPage">Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage">Next</button>
+        </div>
     </div>
 </body>
-
 </html>
